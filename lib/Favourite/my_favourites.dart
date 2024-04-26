@@ -29,7 +29,7 @@ class _MyFavouritesState extends State<MyFavourites> {
         children: [
           Expanded(
             child: ListView.builder(
-                itemCount: 1000,
+                itemCount: 1000,//provider.selectedItem.length,
                 itemBuilder: (context, index){
                   return Consumer<FavouriteProvider>(
                     builder: (context,value,child){
